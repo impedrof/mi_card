@@ -11,8 +11,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.indigo,
-        body: Container(),
+        backgroundColor: Colors.blueAccent,
+        body: SafeArea(
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/profile-photo.jpg'),
+              ),
+              Text(
+                'Pedro Freitas',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
