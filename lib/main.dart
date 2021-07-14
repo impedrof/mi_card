@@ -22,11 +22,22 @@ class MyApp extends StatelessWidget {
               Text(
                 'Pedro Freitas',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   fontSize: 40.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Text(
+                'WEB DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue[200],
+                  fontSize: 18.0,
+                  letterSpacing: 1.2,
+                ),
+              )
             ],
           ),
         ),
